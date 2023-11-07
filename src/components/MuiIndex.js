@@ -7,6 +7,7 @@ import {
   IconButton,
   MenuItem,
   Typography,
+  Button,
 } from "@mui/material";
 
 const Index = {
@@ -18,5 +19,6 @@ const Index = {
   IconButton,
   MenuItem,
   Typography,
+  Button,
 };
 export default Index;
