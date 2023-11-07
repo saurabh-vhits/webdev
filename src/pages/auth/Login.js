@@ -1,9 +1,10 @@
-import React from "react";
-import Index from "../../components/MuiIndex";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import imageIndex from "../../assets/imageIndex";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
   //** Navigate to home screen */
   const onNavigate = () => {
@@ -11,12 +12,16 @@ const Login = () => {
   };
 
   return (
-    <Index.Box>
-      <h1>Login page</h1>
-      <Index.Button variant="contained" onClick={onNavigate}>
-        Home Page
-      </Index.Button>
-    </Index.Box>
+    <div
+      style={{
+        backgroundImage: `url(${imageIndex.loginBG})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: 600,
+      }}
+    >
+      <div style={{ height: 600, backgroundColor: "rgba(0,0,0,0.5)" }}></div>
+    </div>
   );
 };
 
