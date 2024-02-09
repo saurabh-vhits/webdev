@@ -2,6 +2,8 @@ import {
   Box,
   Container,
   Grid,
+  Stack,
+  ImageList,
   AppBar,
   Toolbar,
   IconButton,
@@ -14,10 +16,12 @@ import {
 } from "@mui/material";
 import LoadingOverlay from "react-loading-overlay";
 
-const Index = {
+const MuiIndex = {
   Box,
   Container,
   Grid,
+  Stack,
+  ImageList,
   AppBar,
   Toolbar,
   IconButton,
@@ -25,6 +29,8 @@ const Index = {
   Typography,
   Button,
   LoadingOverlay,
-  Card,
+  Card, 
+  CardContent,
+  CardActions,
 };
-export default Index;
+export default MuiIndex;

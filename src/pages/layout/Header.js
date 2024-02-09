@@ -3,9 +3,11 @@ import Index from "../../components/MuiIndex";
 
 const Header = () => {
   return (
-    <Index.Box>
-      <h1>Header</h1>
-    </Index.Box>
+    <Index.AppBar position="static">
+      <Index.Toolbar>
+        <Index.Typography variant="h6">Your App Name</Index.Typography>
+      </Index.Toolbar>
+    </Index.AppBar>
   );
 };
 
